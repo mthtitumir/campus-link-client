@@ -1,0 +1,172 @@
+[
+        {
+            "college_id": 1,
+            "college_name": "Harmony University",
+            "image": "https://files.barbershop.org/Events/HU/HU-event-logo.jpg",
+            "admission_dates": "2023-08-15 to 2023-09-30",
+            "events": [
+                "Freshers' Welcome Party",
+                "Tech Fest 2023",
+                "Cultural Night"
+            ],
+            "research_history": "Founded in 1965, Harmony University has a rich history of groundbreaking research in various fields.",
+            "sports": [
+                "Football",
+                "Basketball",
+                "Swimming"
+            ]
+        },
+        {
+            "college_id": 2,
+            "college_name": "Innovation Institute",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Technology_Innovation_Institute_Logo.jpg",
+            "admission_dates": "2023-07-01 to 2023-08-31",
+            "events": [
+                "Innovation Week",
+                "Start-up Fair",
+                "Annual Science Symposium"
+            ],
+            "research_history": "Innovation Institute has been at the forefront of cutting-edge research since its establishment in 1980.",
+            "sports": [
+                "Tennis",
+                "Soccer",
+                "Athletics"
+            ]
+        },
+        {
+            "college_id": 3,
+            "college_name": "Academic Heights",
+            "image": "https://www.academicheightsrajkot.in/download/505711264ahps-slider.jpg",
+            "admission_dates": "2023-09-01 to 2023-10-15",
+            "events": [
+                "Freshers' Orientation",
+                "Literary Fest",
+                "Annual Sports Carnival"
+            ],
+            "research_history": "Academic Heights boasts a long-standing tradition of academic excellence and research achievement.",
+            "sports": [
+                "Cricket",
+                "Volleyball",
+                "Badminton"
+            ]
+        },
+        {
+            "college_id": 4,
+            "college_name": "Global Business School",
+            "image": "https://klh.edu.in/wp-content/uploads/2022/06/KLH-GBS-image.jpeg",
+            "admission_dates": "2023-08-01 to 2023-09-30",
+            "events": [
+                "MBA Summit",
+                "Entrepreneurship Workshop",
+                "Marketing Masterclass"
+            ],
+            "research_history": "Global Business School has a strong focus on business-related research and industry partnerships.",
+            "sports": [
+                "Golf",
+                "Table Tennis",
+                "Rugby"
+            ]
+        },
+        {
+            "college_id": 5,
+            "college_name": "Creative Arts Academy",
+            "image": "https://i.ytimg.com/vi/79oWm2hq4D8/maxresdefault.jpg",
+            "admission_dates": "2023-07-15 to 2023-09-15",
+            "events": [
+                "Art Exhibition",
+                "Drama Festival",
+                "Music Showcase"
+            ],
+            "research_history": "Creative Arts Academy has a storied past of fostering artistic expression and innovation.",
+            "sports": [
+                "Paintball",
+                "Dance",
+                "Sculpting"
+            ]
+        },
+        {
+            "college_id": 6,
+            "college_name": "Tech Nexus Institute",
+            "image": "https://nexusinstitut.de/wp-content/uploads/2019/01/nexus-Logo.png",
+            "admission_dates": "2023-08-01 to 2023-09-30",
+            "events": [
+                "Tech Expo",
+                "Coding Competition",
+                "Innovation Symposium"
+            ],
+            "research_history": "Tech Nexus Institute is known for its groundbreaking research in computer science and technology.",
+            "sports": [
+                "Esports",
+                "Chess",
+                "Robotics"
+            ]
+        },
+        {
+            "college_id": 7,
+            "college_name": "Greenwood College",
+            "image": "https://bbk12e1-cdn.myschoolcdn.com/477/photo/orig_photo616163_7404184.jpg",
+            "admission_dates": "2023-07-01 to 2023-08-31",
+            "events": [
+                "Green Initiatives Day",
+                "Environmental Summit",
+                "Nature Walk"
+            ],
+            "research_history": "Greenwood College is dedicated to environmental research and sustainability efforts.",
+            "sports": [
+                "Swimming",
+                "Football",
+                "Gardening"
+            ]
+        },
+        {
+            "college_id": 8,
+            "college_name": "Medical Excellence University",
+            "image": "https://bangladeshpost.net/webroot/uploads/featureimage/2022-09/6321ffd2e5fa2.jpg",
+            "admission_dates": "2023-08-15 to 2023-09-30",
+            "events": [
+                "Medical Conference",
+                "Health Fair",
+                "Research Symposium"
+            ],
+            "research_history": "Medical Excellence University is renowned for its contributions to medical research and healthcare.",
+            "sports": [
+                "Basketball",
+                "Tennis",
+                "Yoga"
+            ]
+        },
+        {
+            "college_id": 9,
+            "college_name": "Business Innovators College",
+            "image": "https://erudera.com/media/images/Berlin_School_of_Business_and_I.2e16d0ba.fill-16000x9000.jpg",
+            "admission_dates": "2023-09-01 to 2023-10-15",
+            "events": [
+                "Entrepreneurship Summit",
+                "Marketing Workshop",
+                "Leadership Conference"
+            ],
+            "research_history": "Business Innovators College fosters innovation and research in the field of entrepreneurship.",
+            "sports": [
+                "Golf",
+                "Cricket",
+                "Debate"
+            ]
+        },
+        {
+            "college_id": 10,
+            "college_name": "Liberal Arts Academy",
+            "image": "https://www.austinmonitor.com/wp-content/uploads/2017/03/LBJHighAustinTX-620x365.jpg",
+            "admission_dates": "2023-07-15 to 2023-09-15",
+            "events": [
+                "Literature Festival",
+                "Debate Tournament",
+                "Art Appreciation Week"
+            ],
+            "research_history": "Liberal Arts Academy celebrates the pursuit of knowledge across various humanities disciplines.",
+            "sports": [
+                "Fencing",
+                "Hiking",
+                "Photography"
+            ]
+        }
+    ]

@@ -5,7 +5,9 @@ const Colleges = () => {
     return (
         <div>
             <Heading />
-            hello
+            <div>
+                
+            </div>
         </div>
     );
 };

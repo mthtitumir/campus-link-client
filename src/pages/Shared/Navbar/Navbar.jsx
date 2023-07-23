@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../providers/Authprovider';
+import Swal from 'sweetalert2';
 
 const Navbar = () => {
+    const {user, logOut} = useContext(AuthContext);
+    const handleLogout = () => {
+        logOut()
+            .then(() => {
+                Swal.fire(
+                    'Logged out successfully!'
+                )
+            })
+    }
     const options = <>
         <li className='text-base font-semibold'><Link to='/colleges'>Colleges</Link></li>
         <li className='text-base font-semibold'><Link to='/admission'>Admission</Link></li>
@@ -31,14 +42,19 @@ const Navbar = () => {
                 </div>
                 <div className="dropdown dropdown-end">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                        <div className="w-10 rounded-full">
-                            <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        <div className="w-10 rounded-full" title={user? user.name : 'Profile'}>
+                            <img src={user?user.photoURL: "https://i.ibb.co/3Mrx6Fg/blank-profile.webp"} />
                         </div>
                     </label>
                     <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
                         <li><a>Profile</a></li>
                         <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        {
+                            user?
+                            <li onClick={handleLogout}><a>Logout</a></li> 
+                            :
+                            <li><Link to='/login'>Login</Link></li>
+                        }
                     </ul>
                 </div>
             </div>
