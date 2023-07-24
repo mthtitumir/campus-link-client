@@ -4,13 +4,13 @@ import { AuthContext } from '../providers/Authprovider';
 import axios from 'axios';
 
 const useColleges = () => {
-    const { loading} = useContext(AuthContext);
+    const { loading } = useContext(AuthContext);
     // const [axiosSecure] = useAxiosSecure();
-    const {data: colleges=[], refetch} = useQuery({
+    const { data: colleges = [], refetch } = useQuery({
         queryKey: ['colleges'],
         enabled: loading,
-        queryFn: async() =>{
-            const res = await axios.get('http://localhost:8000/colleges')
+        queryFn: async () => {
+            const res = await axios.get('https://campus-link-server-six.vercel.app/colleges')
             // console.log(res);
             return res.data;
         }

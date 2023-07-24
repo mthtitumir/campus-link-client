@@ -7,14 +7,14 @@ import useColleges from '../../useHooks/useColleges';
 
 const AdmissionForm = () => {
     const [colleges] = useColleges();
-    const {id} = useParams();
+    const { id } = useParams();
     const appliedCollege = colleges.find(college => college.college_id == id);
     // console.log(appliedCollege.college_name);
     const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
         // console.log(data);
-        const savedUser = { name: data.name, email: data.email, photo: data.photo, phone: data.phone, address: data.address, birth:data.birth, subject: data.subject, college: data.college,  };
-        axios.post('http://localhost:8000/carts', savedUser)
+        const savedUser = { name: data.name, email: data.email, photo: data.photo, phone: data.phone, address: data.address, birth: data.birth, subject: data.subject, college: data.college, collegeId: id };
+        axios.post('https://campus-link-server-six.vercel.app/carts', savedUser)
             .then(response => {
                 console.log('Data posted:', response.data);
                 if (response.data.insertedId) {

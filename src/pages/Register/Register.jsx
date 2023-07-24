@@ -18,7 +18,7 @@ const Register = () => {
                 updateUserProfile(data.name, data.photo)
                     .then(() => {
                         const savedUser = { name: data.name, email: data.email, photo: data.photo };
-                        axios.post('http://localhost:8000/users', savedUser)
+                        axios.post('https://campus-link-server-six.vercel.app/users', savedUser)
                             .then(response => {
                                 console.log('Data posted:', response.data);
                                 if (response.data.insertedId) {
@@ -62,7 +62,7 @@ const Register = () => {
                     <label className="block mb-1" htmlFor="password">
                         Password:
                     </label>
-                    <input {...register('password' )} id="password" placeholder='Your Password' type="text" className="w-full p-2 border border-gray-300 rounded" required />
+                    <input {...register('password')} id="password" placeholder='Your Password' type="text" className="w-full p-2 border border-gray-300 rounded" required />
                 </div>
                 <div className='text-center'>
                     <button type="submit" className=" bg-blue-500 text-white px-4 py-2 rounded">Register</button>

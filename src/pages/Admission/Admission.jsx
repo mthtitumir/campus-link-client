@@ -6,7 +6,6 @@ const Admission = () => {
     const [colleges] = useColleges();
     return (
         <div>
-
             <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}
@@ -29,12 +28,9 @@ const Admission = () => {
                                 </Link>
                             </tr>)
                         }
-
-
                     </tbody>
                 </table>
             </div>
-
         </div>
     );
 };
