@@ -1,9 +1,10 @@
 import React from 'react';
+import Heading from '../../../components/Heading';
 
 const Reviews = () => {
     return (
         <div>
-            <h1>Feedbacks</h1>
+            <Heading title="Reviews & Feedbacks" subtitle="see what students & guardians say about us" />
         </div>
     );
 };
