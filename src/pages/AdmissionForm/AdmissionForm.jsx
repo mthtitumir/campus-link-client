@@ -1,14 +1,19 @@
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import useColleges from '../../useHooks/useColleges';
 
 const AdmissionForm = () => {
+    const [colleges] = useColleges();
+    const {id} = useParams();
+    const appliedCollege = colleges.find(college => college.college_id == id);
+    // console.log(appliedCollege.college_name);
     const { register, handleSubmit, reset, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
-        console.log(data);
-        const savedUser = { name: data.name, email: data.email, photo: data.photo };
+        // console.log(data);
+        const savedUser = { name: data.name, email: data.email, photo: data.photo, phone: data.phone, address: data.address, birth:data.birth, subject: data.subject, college: data.college,  };
         axios.post('http://localhost:8000/carts', savedUser)
             .then(response => {
                 console.log('Data posted:', response.data);
@@ -72,6 +77,12 @@ const AdmissionForm = () => {
                                 Candidate Photo URL:
                             </label>
                             <input {...register('photo')} id="photo" placeholder='Candidate Photo URL' type="text" className="w-full p-2 border border-gray-300 rounded" required />
+                        </div>
+                        <div className="mb-4 px-5">
+                            <label className="block mb-1" htmlFor="college">
+                                Applied College:
+                            </label>
+                            <input {...register('college')} id="college" placeholder='Applied College' readOnly defaultValue={appliedCollege.college_name} type="text" className="w-full p-2 border border-gray-300 rounded" required />
                         </div>
                     </div>
                 </div>
