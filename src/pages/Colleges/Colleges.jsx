@@ -4,6 +4,7 @@ const Colleges = () => {
     return (
         <div>
             <h1>All Colleges</h1>
+            
         </div>
     );
 };
