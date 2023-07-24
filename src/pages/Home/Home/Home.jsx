@@ -7,12 +7,14 @@ import Reviews from '../Reviews/Reviews';
 
 const Home = () => {
     return (
-        <div className=''>
+        <div>
             <Banner />
-            <Colleges />
-            <Gallery />
-            <ResearchPapers />
-            <Reviews />
+            <div className='container mx-auto'>
+                <Colleges />
+                <Gallery />
+                <ResearchPapers />
+                <Reviews />
+            </div>
         </div>
     );
 };

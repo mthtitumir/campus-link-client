@@ -5,7 +5,7 @@ import CollegeCard from './CollegeCard';
 
 const Colleges = () => {
     const [colleges] = useColleges();
-    console.log(colleges);
+    // console.log(colleges);
     return (
         <div>
             <Heading title="Renowned Colleges" subtitle="World's top ranked colleges" />

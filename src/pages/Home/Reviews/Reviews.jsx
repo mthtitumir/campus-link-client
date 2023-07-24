@@ -16,7 +16,7 @@ import { BsStarHalf } from "react-icons/bs"
 
 const Reviews = () => {
     const [reviews] = useReviews();
-    console.log(reviews);
+    // console.log(reviews);
 
     return (
         <div>
